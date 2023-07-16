@@ -1,49 +1,43 @@
-﻿// Куб числа
-// int func (int arg){
-//     int number = 1;
-//     for (int i = 1; i <= arg; i++)
-//     {
-//         number = i*i*i;
-//         Console.WriteLine(number);
-//     }
-//     return number;
-// }
-// Console.Write("Число ");
-// int number = func(int.Parse(Console.ReadLine()));
+﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
 
-
-// Сколько цифр в числе
 // int num = int.Parse(Console.ReadLine());
-// int count = 0;
-// while(num > 0){
-//     count++;
-//     num /= 10;
+// if (num % 10 == num / 10000 && (num % 100)/10 == (num / 1000)%10){
+//     Console.WriteLine("Да");
 // }
-// Console.WriteLine("Цифры: " + count);
+// else Console.WriteLine("Нет");
 
-// Факториал с суммой ЛОЛ
-// int num = int.Parse(Console.ReadLine());
-// int result = 0;
-// for (int i = 0; i <= num; i++)
-// {
-//     result = result + i;
-// }
+
+
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+
+// int num_x1 = int.Parse(Console.ReadLine());
+// int num_y1 = int.Parse(Console.ReadLine());
+// int num_z1 = int.Parse(Console.ReadLine());
+// int num_x2 = int.Parse(Console.ReadLine());
+// int num_y2 = int.Parse(Console.ReadLine());
+// int num_z2 = int.Parse(Console.ReadLine());
+// double result = Math.Sqrt(Math.Pow(num_x2-num_x1,2) + Math.Pow(num_y2-num_y1,2) + Math.Pow(num_z2-num_z1,2));
+// result = Math.Round(result, 2);
 // Console.WriteLine(result);
 
-// Факториал
+
+
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+// Console.WriteLine("Число: ");
 // int num = int.Parse(Console.ReadLine());
 // int result = 1;
 // for (int i = 1; i <= num; i++)
 // {
-//     result = result * i;
+//     result = i * i * i;
+//     Console.WriteLine(result);
 // }
-// Console.WriteLine(result);
-
-// Рандомный массив 
-// int[] massa = new int[8];
-// for (int i = 0; i < massa.Length; i++)
-// {
-//     massa[i] = new Random().Next(0,2);
-// }
-// Console.WriteLine($"[{string.Join(", ", massa)}]");
-
